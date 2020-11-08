@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  /* font-family:monospace; */
+  font-size: 1em;
+  /* overflow-y:hidden; */
+}
+
+img {
+  /* margin-bottom: 10px; */
+  display: block;
+  /* border:solid 1px black; */
+  /* border-left: solid 1px black; */
+  /* border-right: solid 1px black; */
+}
+
+a {
+  /* color: rgb(23, 38, 235); */
+  color: rgb(164, 67, 251);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(164, 67, 251);
+  transition: ease 1s;
+}
+
+div {
+  /* scroll-behavior: smooth; */
+  scroll-behavior: auto;
+}
+
+sup {
+  font-family: sans-serif;
+  font-size: 0.3em;
+  /* margin-left: 2px; */
+  border-left: 1px;
+  word-spacing: 30px;
+  /* color: rgb(10, 47, 242); */
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /* background-color: rgb(130, 228, 128); */
+}
+
+.anonymous-building {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+/* ------------body------------ */
+.text {
+  /* position: absolute; */
+  /* right: 0; */
+  /* display: flex; */
+  /* width: 63%; */
+  width: 60%;
+  height: 100%;
+  margin: 0px;
+  padding: 30px;
+  overflow-y: scroll;
+  /* background-color: rgb(230, 174, 49); */
+  display: flex;
+  flex-direction: column;
+  /* text */
+  font-family: ibm-plex-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.index {
+  height: 30%;
+  background-color: rgb(123, 228, 197);
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+
+.index-in {
+  background-color: rgb(106, 232, 29);
+}
+
+.article {
+  height: 70%;
+  /* background-color: rgb(102, 148, 237); */
+}
+
+.img-2 {
+  /* position: absolute; */
+  /* display:flex; */
+  display: block;
+  width: 33%;
+  height: 100%;
+  overflow-y: scroll;
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  /* background-color: rgb(130, 228, 128); */
+}
+
+.img-1 {
+  /* position: absolute; */
+  /* display: flex; */
+  width: 10%;
+  height: 100%;
+  /* left: 0; */
+  margin: 0px;
+  /* padding: 10px; */
+  overflow-y: scroll;
+  /* background-color: rgb(49, 213, 230); */
+  /* z-index: 999; */
+}
+
+.img-3 {
+  /* position: absolute; */
+  /* display: flex; */
+  width: 6%;
+  height: 100%;
+  /* left: 0; */
+  margin: 0px;
+  /* padding: 10px; */
+  overflow-y: scroll;
+  border-left: solid 1px black;
+  /* background-color: rgb(49, 213, 230); */
+  /* z-index: 999; */
+}
+
+.img-4 {
+  /* position: absolute; */
+  /* display: flex; */
+  width: 3%;
+  height: 100%;
+  /* left: 0; */
+  margin: 0px;
+  /* padding: 10px; */
+  overflow-y: scroll;
+  border-left: solid 1px black;
+  /* background-color: rgb(49, 213, 230); */
+  /* z-index: 999; */
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* caption */
+.tooltip {
+  text-decoration: none;
+  position: relative;
+}
+
+.tooltip span {
+  font-family: sans-serif;
+  font-size: 0.3em;
+  display: none;
+  background-color: white;
+  border:dotted 1px black;
+  padding:1.4em 1em 2em 1.8em;
+  max-width: 210px;
+  z-index: 999;
+}
+
+.tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+
+
+/* 2 */
+
+.tooltip-2 {
+  text-decoration: none;
+  position: relative;
+}
+
+.tooltip-2  {
+  font-family: sans-serif;
+  font-size: 0.3em;
+  /* display: none; */
+
+
+  padding:1.4em 1em 2em 1.8em;
+
+}
+
+
+
+/* scroll bar */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.text::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.text {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.img-1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.img-1 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.img-2::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.img-2 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.img-3::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.img-3 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.img-4::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.img-4 {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+a.work{
+  color:black;
+  font-family: sans-serif;
+  font-size: 0.3em;
+  border:0;
+}
