@@ -21,9 +21,9 @@ img {
 
 a {
   /* color: rgb(23, 38, 235); */
-  color: rgb(164, 67, 251);
+  color: rgb(160, 80, 232);
   text-decoration: none;
-  border-bottom: 1px dotted rgb(164, 67, 251);
+  border-bottom: 1px dotted rgb(160, 80, 232);
   transition: ease 1s;
 }
 
